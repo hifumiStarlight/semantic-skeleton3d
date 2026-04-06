@@ -1,3 +1,7 @@
+# @author Timur Sinnurow
+# @date April 6th 2026
+# @file infer.py
+
 import numpy as np
 import open3d as o3d
 
