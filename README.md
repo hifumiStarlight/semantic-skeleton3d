@@ -5,6 +5,15 @@ This project is to demonstrate the hybrid 3d semanatic pipeline for skeletonizat
 Most of the deep learning models classify points well but the result is volumentric and noisy outputs. These kind of outputs are not suitable for application where precision is key (Industrial CAD). This project experiments with a mix of transformer with correct geometric algorithm to get the best of the both worlds: semantic understanding and structural precision.
 
 ---
+
+
+## Result
+<img src="figures/Area_1_office_1_beam_skel.png" alt="BeamSkel" width="800"/>
+
+Red: beam structure classsified by PTv3 model \
+Yellow: topological skeleton of classified beam via CGAL Mean-Curvature-Flow skeletonization \
+Grey: the rest point cloud of the scene \
+Source: Area_1/office_1
  
 ## Pipeline
  

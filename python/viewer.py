@@ -16,6 +16,9 @@ def load_skeleton_as_lineset(ply_path):
 raw     = o3d.io.read_point_cloud("../assets/labeled.ply")
 skel    = load_skeleton_as_lineset("../assets/skeleton.ply")
 
+room_colors = np.asarray(raw.colors)
+raw.colors = o3d.utility.Vector3dVector(room_colors * 0.6)
+
 # Dim the background points, keep beams red
 vis = o3d.visualization.Visualizer()
 vis.create_window("Semantic Skeleton", width=1280, height=720)

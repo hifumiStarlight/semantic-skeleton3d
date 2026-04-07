@@ -5,7 +5,7 @@
 import numpy as np
 import open3d as o3d
 
-ROOM = "../Pointcept/data/s3dis/Area_5/office_39" # path to room with data set
+ROOM = "../Pointcept/data/s3dis/Area_1/office_1" # path to room with data set
 TARGET_LABEL = 3  # beam
 
 coord  = np.load(f"{ROOM}/coord.npy")    # (N, 3)
