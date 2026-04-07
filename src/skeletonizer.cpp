@@ -18,6 +18,7 @@ void Skeletonizer::run(const std::string& outputPlyPath)
     skeletonize(outputPlyPath);
 }
 
+/// @brief loads the ply file and reconstructs it from point cloud
 void Skeletonizer::loadAndReconstruct()
 {
     using PointWithNormal = std::pair<Point3, CGAL::Vector_3<Kernel>>;
@@ -53,6 +54,7 @@ void Skeletonizer::loadAndReconstruct()
               << " vertices, "   << mesh.number_of_faces() << " faces\n";
 }
 
+/// @brief uses Mean-Curvature-Flow algorithm to compute a skeleton and exports it
 void Skeletonizer::skeletonize(const std::string& outputPath) {
     Skeleton skeleton;
     Skeletonization mcf(mesh);
