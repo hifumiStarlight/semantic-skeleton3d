@@ -36,6 +36,14 @@ Three-layer interactive viewer with keypress toggle:
 pip install -r requirements.txt
 ```
 
+For the C++ portion, build using CMake
+
+---
+
+## Usage
+1. run transformer segmentation model by calling `python python/infer.py`
+2. run CGAL skeletonization module by calling `pathToBuild/skeleformer`
+3. to visualize the result `python python/view.py`
 
 ---
 
@@ -71,5 +79,5 @@ SkeleFormer/
  
 - [Point Transformer V3 — CVPR 2024](https://arxiv.org/abs/2312.10035)
 - [Pointcept framework](https://github.com/Pointcept/Pointcept)
-- [S3DIS Dataset](http://buildingparser.stanford.edu/dataset.html)
+- [S3DIS Dataset](https://sdss.redivis.com/datasets/9q3m-9w5pa1a2h)
 - [CGAL Mean Curvature Flow Skeletonization](https://doc.cgal.org/latest/Surface_mesh_skeletonization/index.html)
